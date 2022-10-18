@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- <header class="header-container">
+        <div class="hamburger-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </header> -->
+    <!-- <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" id="checkbox" name=""/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-item">
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    <button onclick="getData()">Get Data</button>
+    <script src="js/index.js">
+        // const getData = () => {
+    let xhr = new XMLHttpRequest()
+    xhr.open('GET','http://localhost:3000/students')
+    xhr.onload = () => {
+        const data = JSON.parse(xhr.response)
+        console.log(data)
+    }
+    xhr.send()
+}
+    </script>
+</body>
+</html>

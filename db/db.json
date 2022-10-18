@@ -1,0 +1,22 @@
+{
+    "students": [
+      { 
+        "id": 1, 
+      "stuName": "sam", 
+      "department": "computer-science", 
+      "percentage": "65%" 
+    },
+    {
+        "id": 2, 
+        "stuName": "samule", 
+        "department": "computer-science", 
+        "percentage": "55%"   
+    },
+    {
+        "id": 3, 
+        "stuName": "ravi", 
+        "department": "electronics", 
+        "percentage": "75%"   
+    }
+    ]
+}
